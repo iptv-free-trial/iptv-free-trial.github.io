@@ -1,1 +1,655 @@
-<h1>hyyy bidu </h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium IPTV Service | 10,000+ Channels Worldwide</title>
+<meta name="description" content="Watch 10,000+ live TV channels, sports, movies & series in HD & 4K. Affordable IPTV subscription with instant activation and 24/7 support.">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+}
+
+/* Header */
+header{
+    background:#111827;
+    padding:20px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+header h1{
+    color:#22d3ee;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:20px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#22d3ee;
+}
+
+/* Hero */
+.hero{
+    height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+    url('https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=2000&q=100') center/cover no-repeat;
+}
+
+.hero h2{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#22d3ee;
+    padding:12px 25px;
+    border:none;
+    color:#000;
+    font-weight:600;
+    border-radius:6px;
+    cursor:pointer;
+    text-decoration:none;
+    transition:0.3s;
+    display:inline-block;
+    text-align:center;
+}
+
+.btn:hover{
+    background:#06b6d4;
+}
+
+/* Sections */
+.section{
+    padding:80px 20px;
+    text-align:center;
+}
+
+/* Features Grid */
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:50px;
+    max-width:1200px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* Feature Card */
+.feature{
+    background:#1f2937;
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s ease;
+    box-shadow:0 10px 25px rgba(0,0,0,0.4);
+    display:flex;
+    flex-direction:column;
+    text-align:left;
+}
+
+.feature:hover{
+    transform:translateY(-8px);
+}
+
+.feature img{
+    width:100%;
+    height:220px;
+    object-fit:contain;
+    background:#111827;
+    padding:10px;
+    border-radius:12px;
+    margin-bottom:20px;
+}
+
+/* Trial Badge */
+.badge{
+    background:#22d3ee;
+    color:#000;
+    font-size:12px;
+    padding:5px 10px;
+    border-radius:20px;
+    font-weight:600;
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+/* Feature Title */
+.feature h3{
+    font-size:20px;
+    margin-bottom:10px;
+    color:#22d3ee;
+}
+
+/* Feature List */
+.feature ul{
+    list-style:none;
+    margin:15px 0;
+    padding:0;
+}
+
+.feature ul li{
+    margin-bottom:8px;
+    font-size:14px;
+    color:#cbd5e1;
+    position:relative;
+    padding-left:20px;
+}
+
+.feature ul li::before{
+    content:"✔";
+    position:absolute;
+    left:0;
+    color:#22d3ee;
+    font-size:14px;
+}
+
+/* Price */
+.price{
+    font-size:22px;
+    font-weight:700;
+    margin:15px 0;
+}
+
+/* Button Group */
+.btn-group{
+    display:flex;
+    gap:10px;
+    margin-top:auto;
+}
+
+.btn-secondary{
+    background:transparent;
+    border:2px solid #22d3ee;
+    color:#22d3ee;
+}
+
+.btn-secondary:hover{
+    background:#22d3ee;
+    color:#000;
+}
+
+/* Footer */
+footer{
+    background:#111827;
+    text-align:center;
+    padding:20px;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    border-radius:50px;
+    padding:12px 20px;
+    font-size:16px;
+    text-decoration:none;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.4);
+    transition:0.3s;
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+    nav{
+        margin-top:10px;
+    }
+    .hero h2{
+        font-size:30px;
+    }
+    .btn-group{
+        flex-direction:column;
+    }
+}
+
+/* FAQ Accordion */
+.faq-container{
+    max-width:900px;
+    margin:40px auto;
+    text-align:left;
+}
+
+.faq-item{
+    margin-bottom:15px;
+    border:1px solid #374151;
+    border-radius:8px;
+    overflow:hidden;
+}
+
+.faq-question{
+    width:100%;
+    background:#1f2937;
+    color:#fff;
+    border:none;
+    padding:18px 20px;
+    text-align:left;
+    font-size:16px;
+    font-weight:500;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.faq-question:hover{
+    background:#374151;
+}
+
+.faq-answer{
+    max-height:0;
+    overflow:hidden;
+    background:#111827;
+    transition:max-height 0.4s ease;
+    padding:0 20px;
+}
+
+.faq-answer p{
+    padding:15px 0;
+    color:#cbd5e1;
+}
+
+.icon{
+    font-size:20px;
+    font-weight:700;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>IPTV SERVICE</h1>
+<nav>
+<a href="#">Home</a>
+<a href="#features">Features</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+<h2>Stream Unlimited IPTV Channels Worldwide</h2>
+<p>10,000+ Live Channels | 50,000+ Movies & Series | HD & 4K Quality</p>
+<a href="https://bestiptvfreetrials.com/" class="btn">Get Started</a>
+</section>
+
+<section id="features" class="section">
+<h2 style="font-size:32px;">Best Free Trial IPTV Service</h2>
+
+<div class="features">
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771845344956-1104c7cb-587a-4d7c-9a4c-1cb99591bb59.png" alt="Tivi-Live IPTV">
+<h3>Tivi-Live IPTV</h3>
+<ul>
+<li>28,000+ Live Channels</li>
+<li>24H Free Trial</li>
+<li>VOD Movies & Series</li>
+<li>HD & 4K Streaming</li>
+<li>Anti-Freeze Technology</li>
+</ul>
+<div class="price">$15.00 / Month</div>
+<div class="btn-group">
+<a href="https://tivi-live.com/billing/aff.php?aff=54" class="btn">Free Trial</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771845370613-eca88cc2-cfe7-4cdc-aed3-35842643aef2.png" alt="Flash4kIPTV">
+<h3>Flash4kIPTV</h3>
+<ul>
+<li>18,000+ Channels</li>
+<li>36H Free Trial</li>
+<li>Premium Sports Channels</li>
+<li>Multi-Device Support</li>
+<li>24/7 Customer Support</li>
+</ul>
+<div class="price">$11.99 / Month</div>
+<div class="btn-group">
+<a href="https://flash4kiptv.com/whmcs/aff.php?aff=42" class="btn">Free Trial</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771845390283-a94f503d-1238-408e-b76a-3046a7ca39a8.png" alt="Xtreme HD IPTV">
+<h3>Xtreme HD IPTV</h3>
+<ul>
+<li>20,000+ Channels</li>
+<li>36H Free Trial</li>
+<li>Worldwide Content</li>
+<li>99.9% Uptime</li>
+<li>Works on Smart TV, Firestick & Android</li>
+</ul>
+<div class="price">$15.99 / Month</div>
+<div class="btn-group">
+<a href="https://xtremeiptvhd.org/affliate/1/" class="btn">Free Trial</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- NEW SECTION : IPTV Devices & Supported Apps -->
+<section class="section" style="background:#111827;">
+<h2 style="font-size:32px;">Supported Devices & Apps</h2>
+<p style="margin-top:10px; color:#cbd5e1;">
+Watch IPTV PRO on all your favorite devices with easy setup and instant activation.
+</p>
+
+<div class="features">
+
+<div class="feature">
+<img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=800&q=80" alt="Smart TV IPTV">
+<h3>Smart TVs</h3>
+<ul>
+<li>Samsung & LG Smart TV</li>
+<li>IPTV Smarters App</li>
+<li>Smart IPTV Compatible</li>
+<li>4K Ultra HD Support</li>
+<li>Easy Playlist Setup</li>
+</ul>
+<div class="btn-group">
+<a href="#" class="btn btn-secondary">Setup Guide</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?auto=format&fit=crop&w=800&q=80" alt="Firestick IPTV">
+<h3>Amazon Firestick</h3>
+<ul>
+<li>Works with Fire TV Stick</li>
+<li>TiviMate Compatible</li>
+<li>Fast Buffer-Free Streaming</li>
+<li>Live TV + VOD Access</li>
+<li>Step-by-Step Installation</li>
+</ul>
+<div class="btn-group">
+<a href="#" class="btn btn-secondary">Installation Guide</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=800&q=80" alt="Android IPTV">
+<h3>Android & iOS</h3>
+<ul>
+<li>Android Phones & Tablets</li>
+<li>iPhone & iPad Supported</li>
+<li>IPTV Smarters Pro</li>
+<li>XCIPTV Player</li>
+<li>Watch Anywhere Anytime</li>
+</ul>
+<div class="btn-group">
+<a href="#" class="btn btn-secondary">Download App</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- NEW SECTION : More IPTV Providers Listing -->
+<section class="section">
+<h2 style="font-size:32px;">Top Rated IPTV Providers 2026</h2>
+<p style="margin-top:10px; color:#cbd5e1;">
+Explore more high-quality IPTV services with free trials and premium streaming.
+</p>
+
+<div class="features">
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771850382111-3543de9d-c8dc-4223-bcb5-ac173fb7e82d.jpeg" alt="Vision IPTV">
+<h3>FreeGoTV</h3>
+<ul>
+<li>50,000+ Live Channels</li>
+<li>24H Free Trial</li>
+<li>80,000+ VOD Content</li>
+<li>Sports & PPV Included</li>
+<li>Ultra HD & 4K Quality</li>
+<li>99.9% Server Uptime</li>
+</ul>
+<div class="price">$15.00 / Month</div>
+<div class="btn-group">
+<a href="https://freegotv.com/billing/aff.php?aff=168" class="btn">Free Trial</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771850445369-0dd6a654-6b5d-42f1-b919-bb542820ab59.jpeg" alt="UltraStream IPTV">
+<h3>Pulse IPTV</h3>
+<ul>
+<li>20,000+ Channels</li>
+<li>24H Free Trial</li>
+<li>Premium UK & USA Channels</li>
+<li>Latest Movies & Series</li>
+<li>Multi-Device Access</li>
+<li>Anti-Buffer Technology</li>
+</ul>
+<div class="price">$14.00 / Month</div>
+<div class="btn-group">
+<a href="https://pulseiptv.ltd/billing/aff.php?aff=2501" class="btn">Free Trial</a>
+</div>
+</div>
+
+<div class="feature">
+<img src="https://image2url.com/r2/default/images/1771850625882-c92f21e0-3d4c-4376-844d-3ea8842aa06d.jpeg" alt="PrimeCast IPTV">
+<h3>Fireview TV</h3>
+<ul>
+<li>19,880+ Channels</li>
+<li>24H Free Trial</li>
+<li>Premium Sports & Movies</li>
+<li>Fast Global Servers</li>
+<li>Supports MAG & Android Box</li>
+<li>EPG & Catch-Up TV</li>
+</ul>
+<div class="price">€13.59  / Month</div>
+<div class="btn-group">
+<a href="https://fireviewtv.com/r/bestiptv" class="btn">Free Trial</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="about" class="section" style="background:#111827;">
+<h2 style="font-size:32px;">About IPTV PRO</h2>
+
+<div style="max-width:900px;margin:40px auto;color:#cbd5e1;font-size:16px;line-height:1.8;text-align:left;">
+
+<p><strong>IPTV PRO</strong> is a trusted platform dedicated to helping users discover the best Free Trial IPTV Service providers worldwide. Our mission is to connect users with reliable IPTV subscriptions offering premium live TV channels, sports, movies, and on-demand content in HD and 4K quality.</p>
+
+<br>
+
+<p>We carefully review and list top-rated IPTV services that provide:</p>
+
+<ul style="margin-top:15px; padding-left:20px;">
+<li>✔ 10,000+ Live TV Channels</li>
+<li>✔ 50,000+ Movies & Series</li>
+<li>✔ 24H – 36H Free Trial Access</li>
+<li>✔ Anti-Freeze & Stable Streaming</li>
+<li>✔ Multi-Device Compatibility</li>
+<li>✔ 24/7 Customer Support</li>
+</ul>
+
+<br>
+
+<p>Our goal is to simplify your search for a premium IPTV experience. Whether you are using Smart TV, Firestick, Android, iOS, or MAG devices, we provide information about services that ensure seamless streaming worldwide.</p>
+
+<br>
+
+<p>We are committed to transparency, performance, and user satisfaction. All providers listed on our website are selected based on uptime reliability, streaming quality, and customer feedback.</p>
+
+<br>
+
+<p>Thank you for choosing IPTV PRO as your trusted IPTV guide platform.</p>
+
+</div>
+</section>
+
+<section id="contact" class="section">
+<h2 style="font-size:32px;">Contact Us</h2>
+
+<div style="max-width:800px;margin:40px auto;color:#cbd5e1;font-size:16px;line-height:1.8;">
+
+<p>Have questions about our listed IPTV services or need assistance choosing the best Free Trial IPTV Service? Our support team is here to help you 24/7.</p>
+
+<br>
+
+<p><strong>Email Support:</strong><br>
+<a href="mailto:thebestusaiptv@gmail.com" style="color:#22d3ee;text-decoration:none;">thebestusaiptv@gmail.com</a></p>
+
+<br>
+
+<p><strong>WhatsApp Support:</strong><br>
+<a href="https://wa.me/919825606241" target="_blank" style="color:#22d3ee;text-decoration:none;">+91 9825606241</a></p>
+
+<br>
+
+<p><strong>Business Hours:</strong><br>
+Monday – Sunday : 24/7 Customer Assistance</p>
+
+<br>
+
+<p>We aim to respond to all inquiries within 1–12 hours. Your satisfaction and streaming experience are our top priorities.</p>
+
+</div>
+</section>
+
+<!-- FAQ Section -->
+<section class="section" style="background:#111827;">
+<h2 style="font-size:32px;">FAQ’s</h2>
+
+<div class="faq-container">
+
+<div class="faq-item">
+<button class="faq-question">
+1. Is the Free Trial IPTV Service completely free?
+<span class="icon">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Yes, most providers offer a 24–36 hour Free Trial IPTV Service without requiring payment details. This allows you to test live TV channels, sports, movies, and streaming quality before purchasing a subscription.
+</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+2. Do I need a VPN for IPTV?
+<span class="icon">+</span>
+</button>
+<div class="faq-answer">
+<p>
+A VPN is not mandatory, but it is highly recommended for privacy protection and avoiding ISP throttling. It can help improve streaming stability and secure your online activity.
+</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+3. What internet speed is recommended?
+<span class="icon">+</span>
+</button>
+<div class="faq-answer">
+<p>
+For smooth IPTV streaming, at least 15 Mbps is recommended for HD content and 25+ Mbps for 4K streaming. A stable connection ensures buffer-free viewing.
+</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+4. Can IPTV replace traditional cable TV?
+<span class="icon">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Yes, IPTV can replace cable TV by offering thousands of live channels, sports coverage, and on-demand content at a lower monthly cost with multi-device compatibility.
+</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question">
+5. Which devices support Free Trial IPTV Service?
+<span class="icon">+</span>
+</button>
+<div class="faq-answer">
+<p>
+Free Trial IPTV Service works on Smart TVs, Firestick, Android devices, iOS devices, MAG boxes, and Windows or Mac computers using apps like IPTV Smarters and TiviMate.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 IPTV SERVICE. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/919825606241" target="_blank" class="whatsapp-btn">
+💬 Chat on WhatsApp
+</a>
+<script>
+const faqs = document.querySelectorAll(".faq-question");
+
+faqs.forEach(faq => {
+    faq.addEventListener("click", () => {
+        const answer = faq.nextElementSibling;
+        const icon = faq.querySelector(".icon");
+
+        if(answer.style.maxHeight){
+            answer.style.maxHeight = null;
+            icon.textContent = "+";
+        } else {
+            document.querySelectorAll(".faq-answer").forEach(a => a.style.maxHeight = null);
+            document.querySelectorAll(".icon").forEach(i => i.textContent = "+");
+
+            answer.style.maxHeight = answer.scrollHeight + "px";
+            icon.textContent = "−";
+        }
+    });
+});
+</script>
+</body>
+</html>
